@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dev In House-Projeto-1</title>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <h1 class="titulo">TO-DO LIST</h1>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="formularioTarefa">
+        <form onsubmit="inserirTarefa()">
+          <input
+            placeholder="Digite aqui..."
+            type="text"
+            id="tarefa"
+            name="adiciona"
+          />
+          <button onclick="inserirTarefa()">Adicionar</button>
+        </form>
+      </div>
+
+      <div class="caixaListagemTarefas">
+        <ul id="listagemTarefas"></ul>
+      </div>
+    </div>
+  </body>
+
+  <script src="script/script.js"></script>
+</html>
